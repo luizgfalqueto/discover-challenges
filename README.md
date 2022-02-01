@@ -48,7 +48,7 @@ This project is under license from MIT. For more details, see the [LICENSE](LICE
         <a href="./social-tree/">SOCIAL TREE</a>
         <br>
         <br>
-        <p><strong>A page with a list of links (menu) that can be used on social media profiles to direct the user to the chosen location.</strong></p>
+        <p><strong>A page with a list of links (menu) that can be used on <br>social media profiles to direct the user to the chosen location.</strong></p>
         <img src="./assets/social-tree-img.png" width="400px">
       </td>
     </body>
