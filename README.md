@@ -1,5 +1,4 @@
-# discover-challenges
-<h1 align="center">Dev Finance$</h1>
+<h1 align="center">Discover Challenges</h1>
 
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/luizgfalqueto/discover-challenges?color=1f32e0">
