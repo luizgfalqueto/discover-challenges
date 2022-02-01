@@ -2,13 +2,13 @@
 <h1 align="center">Dev Finance$</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/luizgfalqueto/discover-challenges?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/luizgfalqueto/discover-challenges?color=1f32e0">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/luizgfalqueto/discover-challenges?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/luizgfalqueto/discover-challenges?color=1f32e0">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/luizgfalqueto/discover-challenges?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/luizgfalqueto/discover-challenges?color=1f32e0">
 
-  <img alt="License" src="https://img.shields.io/github/license/luizgfalqueto/discover-challenges?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/luizgfalqueto/discover-challenges?color=1f32e0">
 </p>
 
 <hr>
