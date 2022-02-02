@@ -3,6 +3,7 @@
     --blue: #1d539e;
     --gray: #828799;
     --page-background: #f9fbfc;
+    --black: #1E2338;
 }
 
 * {
@@ -43,16 +44,201 @@ header p {
 }
 
 main {
-    background: yellow;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .container {
-    width: min(70%,700PX);
+    width: min(90vw, 1000px);
+    height: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+
+    margin-top: -8rem;
+    z-index: 1;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: var(--page-background);
+    color: var(--black);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card.popular {
+    transform: scale(1.05);
+}
+
+.card.popular .card-header {
+    background-color: var(--yellow);
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    position: relative;
+}
+
+.card.popular .card-header span {
+    padding: 5px 15px;
+
+    border-radius: 20px;
+
+    background-color: var(--blue);
+    color: var(--page-background);
+
+    position: absolute;
+    right: 1rem;
+}
+
+.card.popular .button {
+    background-color: var(--blue);
+    color: var(--page-background);
+}
+
+.card-header {
+    width: 100%;
+    border-radius: 10px 10px 0 0 ;
+
+    font-size: 1.3rem;
+    
+    padding: 1.5rem;
+}
+
+.card .price {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 1.5rem;
+
+    color: var(--black);
+}
+
+.card .price p {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.card .price .decimals {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.card .price .month {
+    margin-left: .5rem;
+
+    color: var(--gray);
+
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.card .description {
+    width: 100%;
+
+    padding: 0 1.5rem;
+
+    font-size: normal;
+    font-weight: 400;
+    line-height: 19px;
+
+    color: var(--gray);
+}
+
+.benefits {
+    width: 100%;
+
+    padding: 0 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.benefits ul {
+    list-style: none;
+    line-height: 2.5rem;
+}
+
+.benefits li img {
+    margin-right: 1rem;
+}
+
+.benefits li {
+    display: flex;
+    align-items: center;
+
+    font-weight: bold;
+    color: var(--gray);
+}
+
+.div-button {
+    width: 100%;
+
+    padding: 1rem 1.5rem 0 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card .button {
+    color: var(--blue);
+    border: 2px var(--blue) solid;
+    border-radius: .25rem;
+
+    width: 260px;
+    height: 50px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    text-decoration: none;
+}
+
+.card.popular .button:hover {
+    background-color: rgb(134, 134, 248);
+}
+
+.card .button:hover {
+    opacity: .5;
+}
+
+footer {
+    text-align: center;
+
+    margin-top: 5rem;
+
+    font-size: 1rem;
+
+    color: var(--gray);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--gray);
+}
+
+@media (max-width: 1100px) {
+    header p {
+        font-size: 1rem;
+    }
+
+    .container {
+        width: min(80%, 1000px);
+
+        grid-template-columns: 1fr;
+        gap: 5rem;
+    }
+
+    footer {
+        margin: 2rem 0 2rem 0;
+    }
 }
