@@ -43,14 +43,26 @@ This project is under license from MIT. For more details, see the [LICENSE](LICE
       <!-- <td class="tg-0pky">Social Tree</td> -->
     </tr>
     <tbody>
-      <td align="center">
-      <br>
-        <a href="./social-tree/">SOCIAL TREE</a>
+      <tr>
+        <td align="center">
         <br>
+          <a href="./social-tree/">SOCIAL TREE</a>
+          <br>
+          <br>
+          <p><strong>A page with a list of links (menu) that can be used on <br>social media profiles to direct the user to the chosen location.</strong></p>
+          <img src="./assets/social-tree-img.png" width="400px">
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
         <br>
-        <p><strong>A page with a list of links (menu) that can be used on <br>social media profiles to direct the user to the chosen location.</strong></p>
-        <img src="./assets/social-tree-img.png" width="400px">
-      </td>
+          <a href="./price-table/">PRICE TABLE</a>
+          <br>
+          <br>
+          <p><strong>A page with a table with product/service pricing/plan options.</strong></p>
+          <img src="./assets/price-table-img.png" width="600px">
+        </td>
+      </tr>
     </body>
   </thead>
 </table>
