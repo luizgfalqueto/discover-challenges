@@ -1,0 +1,52 @@
+:root {
+    --body-bg-color: #dce4e3;
+    --green: #18c29c;
+    --light-green: #8ed7c6;
+    --light-grey: #dce4e3;
+    --text-color: #084236;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: var(--green);
+
+    padding: 1rem 2rem;
+}
+
+.sidebar .logo_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar .nav {
+    margin-top: 2rem;
+}
+
+.profile_content {
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    justify-content: space-between;
+}
