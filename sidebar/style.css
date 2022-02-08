@@ -30,7 +30,7 @@ body {
 
     background-color: var(--green);
 
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 1rem 1rem;
 }
 
 .sidebar .logo_content {
@@ -96,6 +96,10 @@ body {
     background-color: var(--light-green);
 }
 
+.nav_list .search_input:hover {
+    background-color: #b6fced;
+}
+
 .nav_list .search_input input {
     width: 100%;
 
@@ -120,6 +124,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-content: center;
 
     width: 100%;
 }
@@ -131,12 +136,14 @@ body {
     font-weight: 500;
 
     color: var(--text-color);
-
-    margin-left: -1rem;
 }
 
 .profile_details .vet_name {
-    height: 20px;
+    font-size: 17px;
+}
+
+.profile_details .vet_job {
+    font-size: 14px;
 }
 
 .profile_content .profile_img img {
@@ -144,6 +151,8 @@ body {
     height: 50px;
 
     align-self: center;
+
+    border-radius: 10px;
 }
 
 .div_logout {
@@ -151,4 +160,5 @@ body {
     align-items: center;
 
     margin-right: 1rem;
+    margin-left: 1rem;
 }
