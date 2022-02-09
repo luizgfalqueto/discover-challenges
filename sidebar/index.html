@@ -13,60 +13,73 @@
 </head>
 <body>
     <div class="sidebar">
-        <div class="logo_content">
-            <div class="logo"><img src="./images/logo.svg" alt=""></div>
-            <div class="btn_menu"><img src="./images/grid.svg" alt=""></div>
-        </div>
-        <div class="nav_list">
-            <ul>
-                <li>
-                    <img src="./images/search.svg" alt="Logo search">
-                    <input type="text" placeholder="Search">
-                </li>
-                <li>
+        <div class="sidebar_content">
+            <div class="logo_content">
+                <div class="logo"><img src="./images/logo.svg" alt=""></div>
+                <div if="btn_menu">
                     <a href="#">
-                        <img src="./images/grid.svg" alt="Logo dashboard">
-                        <div class="link_name">Dashboard</div>
+                        <img src="./images/menu.svg" alt="Menu">
                     </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./images/pet.svg" alt="Logo pets">
-                        <div class="link_name">Pets</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./images/user.svg" alt="Client logo">
-                        <div class="link_name">Clientes</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./images/vet.svg" alt="Vets logo">
-                        <div class="link_name">Vets</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./images/settings.svg" alt="Setting logo">
-                        <div class="link_name">Ajustes</div>
-                    </a>
-                </li>
-            </ul>
+                </div>
+            </div>
+            <div class="nav_list">
+                <ul>
+                    <li class="li_search">
+                        <a id="btn_search" href="#"><img src="./images/search.svg" alt="Logo search"></a>
+                        <input type="text" placeholder="Search">
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/grid.svg" alt="Logo dashboard">
+                            <div class="link_name">Dashboard</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/pet.svg" alt="Logo pets">
+                            <div class="link_name">Pets</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/user.svg" alt="Client logo">
+                            <div class="link_name">Clientes</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/vet.svg" alt="Vets logo">
+                            <div class="link_name">Vets</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/settings.svg" alt="Setting logo">
+                            <div class="link_name">Ajustes</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="profile_content">
-            <div class="profile_photo">
-                <!-- <img src="./images/photo.jpg" alt="Photo profile"> -->
+            <div class="profile_photo_details">
+                <div class="profile_photo">
+                    <img src="./images/photo.jpg" alt="Photo profile">
+                </div>
+                <div class="profile_details">
+                    <div class="name">Eleanor Pena</div>
+                    <div class="job">Veterinária</div>
+                </div>
             </div>
-            <div class="profile_details">
-                <div class="name">Eleanor Pena</div>
-                <div class="job">Veterinária</div>
-            </div>
-            <div class="btn_logout">
-                <img src="./images/log-out.svg" alt="Logout logo">
+            <div id="btn_logout">
+                <a href="#">
+                    <img src="./images/log-out.svg" alt="Logout logo">
+                </a>
             </div>
         </div>
     </div>
+    <main>
+        <div class="container">Dashboard</div>
+    </main>
 </body>
 </html>
