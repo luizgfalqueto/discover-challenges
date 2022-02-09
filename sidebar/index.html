@@ -4,9 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <title>Sidebar</title>
 </head>
 <body>
-    
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo"><img src="./images/logo.svg" alt=""></div>
+            <div class="btn_menu"><img src="./images/grid.svg" alt=""></div>
+        </div>
+        <div class="nav_list">
+            <ul>
+                <li>
+                    <img src="./images/search.svg" alt="Logo search">
+                    <input type="text" placeholder="Search">
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/grid.svg" alt="Logo dashboard">
+                        <div class="link_name">Dashboard</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/pet.svg" alt="Logo pets">
+                        <div class="link_name">Pets</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/user.svg" alt="Client logo">
+                        <div class="link_name">Clientes</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/vet.svg" alt="Vets logo">
+                        <div class="link_name">Vets</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/settings.svg" alt="Setting logo">
+                        <div class="link_name">Ajustes</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="profile_content">
+            <div class="profile_photo">
+                <!-- <img src="./images/photo.jpg" alt="Photo profile"> -->
+            </div>
+            <div class="profile_details">
+                <div class="name">Eleanor Pena</div>
+                <div class="job">Veterinária</div>
+            </div>
+            <div class="btn_logout">
+                <img src="./images/log-out.svg" alt="Logout logo">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
