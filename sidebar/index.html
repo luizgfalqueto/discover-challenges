@@ -16,7 +16,7 @@
         <div class="sidebar_content">
             <div class="logo_content">
                 <div class="logo"><img src="./images/logo.svg" alt=""></div>
-                <div if="btn_menu">
+                <div id="btn_menu">
                     <a href="#">
                         <img src="./images/menu.svg" alt="Menu">
                     </a>
@@ -27,36 +27,42 @@
                     <li class="li_search">
                         <a id="btn_search" href="#"><img src="./images/search.svg" alt="Logo search"></a>
                         <input type="text" placeholder="Search">
+                        <span class="legend">Search</span>
                     </li>
                     <li>
                         <a href="#">
                             <img src="./images/grid.svg" alt="Logo dashboard">
                             <div class="link_name">Dashboard</div>
                         </a>
+                        <span class="legend">Dashboard</span>
                     </li>
                     <li>
                         <a href="#">
                             <img src="./images/pet.svg" alt="Logo pets">
                             <div class="link_name">Pets</div>
                         </a>
+                        <span class="legend">Pets</span>
                     </li>
                     <li>
                         <a href="#">
                             <img src="./images/user.svg" alt="Client logo">
                             <div class="link_name">Clientes</div>
                         </a>
+                        <span class="legend">Clientes</span>
                     </li>
                     <li>
                         <a href="#">
                             <img src="./images/vet.svg" alt="Vets logo">
                             <div class="link_name">Vets</div>
                         </a>
+                        <span class="legend">Vets</span>
                     </li>
                     <li>
                         <a href="#">
                             <img src="./images/settings.svg" alt="Setting logo">
                             <div class="link_name">Ajustes</div>
                         </a>
+                        <span class="legend">Ajustes</span>
                     </li>
                 </ul>
             </div>
@@ -78,8 +84,27 @@
             </div>
         </div>
     </div>
-    <main>
-        <div class="container">Dashboard</div>
-    </main>
+    <div class="container">Dashboard</div>
+
+    <script>
+        const btn_menu = document.querySelector('#btn_menu')
+        const sidebar = document.querySelector('.sidebar')
+        const btn_search = document.querySelector('#btn_search')
+
+        const Modal = {
+            flagMenu() {
+                sidebar.classList.toggle('short')
+            },
+
+            flagSearch() {
+                if(sidebar.classList.contains('short')) {
+                    sidebar.classList.remove('short')
+                }
+            }
+        }
+
+        btn_menu.addEventListener('click', Modal.flagMenu)
+        btn_search.addEventListener('click', Modal.flagSearch)
+    </script>
 </body>
 </html>

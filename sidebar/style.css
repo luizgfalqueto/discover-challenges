@@ -4,6 +4,7 @@
     --light-green: #8ed7c6;
     --light-grey: #dce4e3;
     --text-color: #084236;
+    --legend-color: #c5c5c5;
   }
 
 * {
@@ -26,7 +27,7 @@ body {
 .sidebar {
     background-color: var(--green);
 
-    width: 240px;
+    width: 250px;
     height: 100vh;
 
     position: absolute;
@@ -34,6 +35,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    transition: all 0.5s ease;
+}
+
+.sidebar.short {
+    width: 80px;
 }
 
 .sidebar_content {
@@ -43,16 +50,47 @@ body {
 /* ======================================= LOGO CONTENT ========================= */
 
 .logo_content {
+    position: absolute;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: .5rem 0;
+}
+
+.sidebar.short .logo {
+    opacity: 0;
+    display: none;
+}
+
+.sidebar.short .logo_content {
+    position: relative;
+    justify-content: center;
+
+}
+
+.logo_content #btn_menu {
+    position: absolute;
+    left: 190px;
+    transition: all 0.5s ease;
+}
+
+.sidebar.short .logo_content #btn_menu {
+    top: 10%;
+    left: 20%;
 }
 
 /* ======================================= NAV LIST ============================= */
 
 .nav_list {
+    position: absolute;
+    top: 8%;
     margin-top: 1rem;
     width: 100%;
+}
+
+.sidebar.short .nav_list {
+    width: 90%;
 }
 
 /* ======================================= UL =================================== */
@@ -65,7 +103,7 @@ body {
 /* ======================================= LI =================================== */
 
 .nav_list ul li {
-    width: 100%;
+    width: 80%;
 }
 
 .nav_list .li_search {
@@ -75,7 +113,7 @@ body {
 
     background-color: var(--light-green);
 
-    padding: .5rem;
+    /* padding: .5rem; */
 
     border-radius: 10px;
 }
@@ -93,6 +131,15 @@ body {
     font-size: 1rem;
 }
 
+.sidebar.short .nav_list .li_search input {
+    display: none;
+}
+
+.sidebar.short .nav_list .li_search a {
+    display: flex;
+    justify-content: center;
+} 
+
 .nav_list ul li + li {
     margin-top: 1.5rem;
 }
@@ -109,13 +156,56 @@ body {
     text-decoration: none;
 }
 
-.nav_list li + li a:hover {
+.nav_list li + li:hover a {
     background-color: var(--light-green);
 }
 
 .nav_list .link_name {
     font-weight: 500;
     margin-left: .5rem;
+}
+
+.sidebar.short li {
+    width: 60%;
+}
+
+.sidebar.short li .link_name {
+    opacity: 0;
+    display: none;
+}
+
+.sidebar.short li a {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* ============================== LEGENDS ============================= */
+
+.sidebar ul li .legend {
+    position: absolute;
+    left: 80px;
+    transform: translateY(-100%);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 35px;
+    height: 35px;
+    width: 122px;
+    background-color: var(--legend-color);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+
+    opacity: 0;
+
+    transition: all 0.5s ease;
+
+    z-index: 1;
+}
+
+.sidebar.short ul li:hover .legend {
+    opacity: 1;
+}
+
+.sidebar.short ul li.li_search .legend {
+    transform: translateY(-10%);
 }
 
 /* ============================== PROFILE CONTENT ============================= */
@@ -130,6 +220,8 @@ body {
     padding: .5rem 1rem;
 
     background-color: var(--light-green);
+
+    text-align: center;
 }
 
 
@@ -149,10 +241,14 @@ body {
     height: 45px;
 
     border-radius: 10px;
+
+    object-fit: cover;
 }
 
 .profile_details {
     margin-left: .5rem;
+    opacity: 1;
+    white-space: nowrap;
 }
 
 .profile_details .name {
@@ -164,11 +260,27 @@ body {
     font-size: .8rem;
 }
 
+#btn_logout {
+    position: absolute;
+    left: 80%;
+}
+
 #btn_logout a {
     margin-right: 0;
-
+    
     display: flex;
     align-items: center;
+}
+
+.sidebar.short .profile_photo_details {
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    pointer-events: none;
+}
+
+.sidebar.short #btn_logout {
+    position: absolute;
+    left: 35%;
 }
 
 /* ============================== CONTAINER =================================== */
@@ -177,7 +289,7 @@ body {
     position: absolute;
     height: 100%;
     width: calc(100% - 240px);
-    left: 240px;
+    left: 250px;
 
     padding: 2rem;
 
@@ -186,4 +298,11 @@ body {
 
     font-size: 2rem;
     font-weight: 500;
+
+    transition: all .5s ease;
+}
+
+.sidebar.short ~ .container {
+    width: calc(100% - 80px);
+    left: 80px;
 }
