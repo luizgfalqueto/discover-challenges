@@ -15,7 +15,7 @@
   <a href="#dart-about">About</a> &#xa0; | &#xa0;
   <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
-  <a href="#heavy_check_mark-challenges">Challenges</a>
+  <a href="#checkered_flag-challenges">Challenges</a>
 </p>
 <br>
 
@@ -35,34 +35,17 @@ The following tools were used in these challenges:
 
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE) file.
 
-## :heavy_check_mark: Challenges ##
+## :checkered_flag: Challenges ##
 
-<table align="center" class="tg">
-  <thead>
-    <tr>
-      <!-- <td class="tg-0pky">Social Tree</td> -->
-    </tr>
-    <tbody>
-      <tr>
-        <td align="center">
-        <br>
-          <a href="./social-tree/">SOCIAL TREE</a>
-          <br>
-          <br>
-          <p><strong>A page with a list of links (menu) that can be used on <br>social media profiles to direct the user to the chosen location.</strong></p>
-          <img src="./assets/social-tree-img.png" width="400px">
-        </td>
-      </tr>
-      <tr>
-        <td align="center">
-        <br>
-          <a href="./price-table/">PRICE TABLE</a>
-          <br>
-          <br>
-          <p><strong>A page with a table with product/service pricing/plan options.</strong></p>
-          <img src="./assets/price-table-img.png" width="600px">
-        </td>
-      </tr>
-    </body>
-  </thead>
-</table>
+:large_blue_circle: **Pricing Table**
+    
+  >##### :pushpin: A page with a table with product/service pricing/plan options.
+  > :point_right: **You can view this project** <a href="./pricing-table/">CLICKING HERE</a>.
+
+:large_blue_circle: Social Tree
+  >##### :pushpin: A page with a list of links (menu) that can be used on social media profiles to direct the user to the chosen location.
+  >:point_right: **You can view this project** <a href="./social-tree/">CLICKING HERE</a>.
+
+:large_blue_circle: Sidebar
+  >##### :pushpin:  A sidebar with menu button to close or open the sidebar.
+  >:point_right: **You can view this project** <a href="./sidebar/">CLICKING HERE</a>.
