@@ -1,0 +1,85 @@
+:root {
+    --black: #4D4C59;
+    --purple: #6C63FF;
+    --light-grey: #C8C8C8;
+    --text-color: #9C9AB6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.div_content {
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.div_content h1 {
+    color: var(--purple);
+
+    margin-bottom: 1rem;
+}
+
+.div_countdown {
+    display: flex;
+    justify-content: space-evenly;
+
+    padding: .5rem;
+    font-size: 2.5rem;
+
+    position: relative;
+}
+
+.div_content div {
+    width: 13rem;
+    height: 13rem;
+}
+
+.div_content div::after {
+    content: attr(data-content);
+    font-size: 1rem;
+    color: var(--light-grey);
+    position: absolute;
+    top: -1rem;
+    transform: translateX(-100%);
+}
+
+.div_rocket {
+    width: 90%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
