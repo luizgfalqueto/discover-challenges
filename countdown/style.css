@@ -41,6 +41,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     margin: 0 auto;
     padding: 2rem;
@@ -49,12 +50,12 @@ main {
 .div_content h1 {
     color: var(--purple);
 
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    margin-left: -2.5rem;
 }
 
 .div_countdown {
     display: flex;
-    justify-content: space-evenly;
 
     padding: .5rem;
     font-size: 2.5rem;
@@ -62,9 +63,17 @@ main {
     position: relative;
 }
 
-.div_content div {
-    width: 13rem;
-    height: 13rem;
+.div_countdown div {
+    width: 6rem;
+    height: 4rem;
+
+    display: flex;
+    justify-content: center;
+
+    color: var(--black);
+
+    font-weight: 500;
+    font-size: 3rem;
 }
 
 .div_content div::after {
@@ -73,7 +82,30 @@ main {
     color: var(--light-grey);
     position: absolute;
     top: -1rem;
-    transform: translateX(-100%);
+}
+
+.div_content p {
+    color: var(--text-color);
+    padding: 1rem;
+    font-size: .8rem;
+}
+
+#button_inscription {
+    width: 10rem;
+
+    padding: .5rem 2rem;
+
+    background-color: var(--purple);
+    color: white;
+
+    border-radius: 7px;
+    border: none;
+
+    transition: all 0.5s ease;
+}
+
+#button_inscription:hover {
+    background-color: #4e48ca;
 }
 
 .div_rocket {
@@ -82,4 +114,15 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.top_wave {
+    position: absolute;
+    top: -3rem;
+    z-index: -1;
+}
+
+.bottom_wave {
+    position: absolute;
+    bottom: -5rem;
 }

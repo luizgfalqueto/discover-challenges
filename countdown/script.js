@@ -18,9 +18,9 @@ const interval = setInterval(() => {
 
     countdown.innerHTML = 
     `
-    <div data-content="Dias">${days}</div>
-    <div data-content="Horas">${hours}</div>
-    <div data-content="Minutos">${minutes}</div>
+    <div data-content="Dias">${days}</div>:
+    <div data-content="Horas">${hours}</div>:
+    <div data-content="Minutos">${minutes}</div>:
     <div data-content="Segundos">${seconds}</div>
     `
 })
