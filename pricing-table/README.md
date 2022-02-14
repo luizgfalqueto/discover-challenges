@@ -1,4 +1,4 @@
-## Sidebar
+## Pricing Table
 
 <img src="./assets/project_table.png">
 <br>
