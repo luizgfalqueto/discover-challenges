@@ -1,0 +1,227 @@
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--background);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--text-title);
+}
+
+.container {
+    padding: 1.5rem 1rem;
+}
+
+.header img {
+    padding: .5rem .5rem .5rem 0;
+}
+
+.tittle {
+    margin-bottom: 2rem;
+}
+
+#div_form {
+    width: 23rem;
+}
+
+#div_form .tittle_login {
+    display: flex;
+
+    margin-bottom: .5rem;
+}
+
+#div_form .tittle_login img {
+    margin-right: .5rem;
+}
+
+#div_form .tittle_login h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#div_form .tittle p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.input_group {
+    margin-bottom: 1rem;
+}
+
+.input_group a {
+    cursor: pointer;
+}
+
+.input_group label {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.input_group .entry {
+    padding: .5rem;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px solid var(--text-base);
+    border-radius: 4px;
+}
+
+.input_group .entry img {
+    margin-right: .5rem;
+}
+
+.input_group .entry input {
+    background: none;
+    color: var(--text-base);
+    font-size: 1rem;
+    border: none;
+    width: 85%;
+}
+
+.input_group .entry input:focus {
+    outline: 0;
+}
+
+.input_group .entry #eye {
+    margin-right: 0;
+}
+
+.input_group .checkbox_remember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input_group .checkbox_remember input {
+    all: unset;
+    width: 20px;
+    height: 20px;
+    margin-right: .5rem;
+    border-radius: 4px;
+    background-color: var(--background);
+    border: 1px solid var(--text-base);
+}
+
+.input_group .checkbox_remember input:checked {
+    background-color: #ffc632;
+    content: url('./images/check.svg');
+}
+
+.input_group .checkbox_remember .checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.input_group .checkbox_remember a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.input_group button {
+    width: 100%;
+    height: 3rem;
+
+    background-color: var(--primary-color);
+    color: #473404;
+
+    text-transform: uppercase;
+
+    font-weight: 600;
+    font-size: 1.1rem;
+
+    border: none;
+    border-radius: 4px;
+}
+
+.input_group button:hover {
+    background-color: #f7ca5b;
+    color: #312402;
+}
+
+.input_group .register {
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: .5rem;
+    font-weight: 400;
+}
+
+.input_group .register a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+@media (min-width: 1200px) {
+    
+    .container {
+        padding: 0;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+    }
+
+    .left_side {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .form_container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .header {
+        width: 100%;
+        padding: 1rem;
+        position: absolute;
+        top: 0;
+    }
+
+    #div_form {
+        height: calc(100% - 6rem);
+        margin-top: 3rem;
+    }
+    
+    .right_side {
+        width: 50%;
+        min-height: 100vh;
+    }
+
+    .right_side .image_container {
+        width: 100%;
+        height: 100%;
+        background: url("./images/side-image.jpg") center no-repeat;
+        object-fit:cover;
+    }
+}
+
+@media (min-width: 1500px) {
+    .right_side .image_container {
+        background: url("./images/side-image-2x.jpg") center no-repeat;
+    }
+}
