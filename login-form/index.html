@@ -4,9 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <title>Login</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="form_container">
+            <div class="header">
+                <a href="#"><img src="./images/logo.svg" alt="Logo camp.in"></a>
+            </div>
+            <div id="div_form">
+                <div class="tittle">
+                    <img src="./images/log-in.svg" alt="">
+                    <h2>Faça seu login</h2>
+                    <p>Entre com suas informações de cadastro.</p>
+                </div>
+                <form>
+                    <div class="input_group">
+                        <label for="username">E-mail</label>
+                        <div class="entry">
+                            <img src="./images/mail.svg" alt="E-mail image">
+                            <input type="text" name="username" id="input_user" placeholder="Digite seu e-mail">
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <label for="password">Senha</label>
+                        <div class="entry">
+                            <img src="./images/lock.svg" alt="Password image">
+                            <input type="password" name="password" id="input_password" placeholder="Digite sua senha">
+                            <img src="./images/eye.svg" alt="Eye image">
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <div class="checkbox_remember">
+                            <input type="checkbox" name="Lembre-me" id="remember_me">
+                            <label for="remember_me">Lembre-me</label>
+                            <a href="#">Esqueci minha senha</a>
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <button>Entrar</button>
+                        <p>Não tem uma conta? <a href="#">Registre-se</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="image_container"></div>
+    </div>
 </body>
 </html>
