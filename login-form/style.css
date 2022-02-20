@@ -80,7 +80,7 @@ body {
     display: flex;
     align-items: center;
 
-    border: 1px solid var(--text-base);
+    border: 2px solid var(--text-base);
     border-radius: 4px;
 }
 
@@ -102,6 +102,14 @@ body {
 
 .input_group .entry #eye {
     margin-right: 0;
+}
+
+.input_group .entry.active {
+    border: 2px solid var(--primary-color);
+}
+
+.input_group .entry.show {
+    mask-type: 'text';
 }
 
 .input_group .checkbox_remember {
@@ -137,6 +145,10 @@ body {
     color: var(--primary-color);
 }
 
+.input_group .checkbox_remember a:hover {
+    text-decoration: underline;
+}
+
 .input_group button {
     width: 100%;
     height: 3rem;
@@ -151,11 +163,13 @@ body {
 
     border: none;
     border-radius: 4px;
+
+    transition: all .5s ease;
 }
 
 .input_group button:hover {
-    background-color: #f7ca5b;
-    color: #312402;
+    background-color: #fcb400;
+    color: black;
 }
 
 .input_group .register {
@@ -169,6 +183,10 @@ body {
     text-decoration: none;
     color: var(--primary-color);
     font-weight: 500;
+}
+
+.input_group .register a:hover {
+    text-decoration: underline;
 }
 
 @media (min-width: 1200px) {
