@@ -1,14 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;700&display=swap" rel="stylesheet">
+
     <title>Rocketcard</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="content-card">
+            <p>Compartilhe seu #rocketcard</p>
+            <div class="card-background">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="logo">
+                            <img src="./assets/logo.svg" alt="Logo Rocketseat">
+                        </div>
+                        <p id="userName"></p>
+                    </div>
+                    <div class="card-content">
+                        <div class="image-profile">
+                            <img id="userImage" src="./assets/followers.svg" alt="User Image">
+                        </div>
+                        <div class="infos">
+                            <ul>
+                                <li>
+                                    <img src="./assets/followers.svg" alt="Followers">
+                                    <span id="userFollowers"></span>
+                                </li>
+                                <li>
+                                    <img src="./assets/following.svg" alt="Following">
+                                    <span id="userFollowing"></span>
+                                </li>
+                                <li>
+                                    <img src="./assets/repository.svg" alt="Repository">
+                                    <span id="userRepositories"></span>
+                                </li>
+                                <li>
+                                    <img src="./assets/company.svg" alt="Company">
+                                    <span id="userCompany"></span>
+                                </li>
+                                <li>
+                                    <img src="./assets/location.svg" alt="Location">
+                                    <span id="userLocation"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <img src="./assets/logo.svg" alt="Logo">
+                        <p>Rocketcard</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="customize">
+            <p>Customizar Rocketcard</p>
+            <button>Gerar background</button>
+        </div>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>

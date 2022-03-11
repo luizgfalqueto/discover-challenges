@@ -1,0 +1,255 @@
+:root {
+    --bg: #000000;
+    --bg-card: #0E1218;
+    --text: #F1F1F1;
+    --img-profile: #8257e5;
+    --buttons: #FFF;
+    --border-button: #1A1A1A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+body {
+    background-color: var(--bg-card);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-card {
+    width: 300px;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    color: var(--text);
+}
+
+.content-card p{
+    font-size: .8rem;
+    font-weight: 500;
+
+    margin-bottom: .5rem;
+}
+
+.card-background {
+    background-color: var(--bg);
+
+    width: 100%;
+    height: 100%;
+
+    padding: .5rem;
+
+    border-radius: 45px;
+}
+
+.card {
+    background-color: var(--bg-card);
+
+    width: 100%;
+    height: 100%;
+
+    padding: 01rem;
+
+    border-radius: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.card .card-header {
+    width: 100%;
+    height: 15%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card .card-header .logo {
+    width: 50px;
+    height: 50px;
+
+    border: 2px solid var(--text);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .card-header .logo img {
+    width: 30px;
+    height: 30px;
+}
+
+.card .card-header p {
+    margin: 0 0 0 .5rem;
+
+    font-size: .9rem;
+}
+
+.card .card-content {
+    width: 100%;
+    height: 70%;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card .card-content .image-profile {
+    width: 240px;
+    height: 240px;
+
+    background-color: var(--img-profile);
+
+    position: absolute;
+    right: -20%;
+    top: 0;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .card-content .image-profile img {
+    width: 220px;
+    height: 220px;
+
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card .card-content .infos {
+    width: 180px;
+    height: 150px;
+
+    border-radius: 25%;
+
+    opacity: .8;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgb(46, 45, 45) 60%, rgb(90, 88, 88) 90%);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.card .card-content .infos ul {
+    list-style: none;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card .card-content .infos ul li {
+    line-height: .8rem;
+
+    margin-left: .5rem;
+    
+    color: var(--text);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .card-content .infos ul li + li {
+    margin-top: .3rem;
+}
+
+.card .card-content .infos ul li span {
+    font-size: .8rem;
+    margin-left: .5rem;
+}
+
+.card .card-footer {
+    width: 100%;
+    height: 10%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.card .card-footer img {
+    width: 20px;
+    height: 20px;
+}
+
+.card .card-footer p {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.customize {
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color: var(--text);
+}
+
+.customize p {
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+.customize button {
+    background-color: var(--border-button);
+    color: var(--buttons);
+    
+    border: none;
+
+    padding: .5rem 1rem;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+
+.customize button:hover {
+    opacity: .7;
+    color: white;
+}
