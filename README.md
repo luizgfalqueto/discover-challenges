@@ -69,3 +69,8 @@ This project is under license from MIT. For more details, see the [LICENSE](LICE
   >##### :pushpin:  A card that brings information from the Github API and has a button that changes the card's background color
   >
   >:point_right: **You can view this project** <a href="./rocketcard/">CLICKING HERE</a>.
+
+:large_blue_circle: Rocketflix
+  >##### :pushpin:  A simple responsive website using themoviedb.org API to display a random movie whenever you click Encontrar Filme.
+  >
+  >:point_right: **You can view this project** <a href="./rocketflix/">CLICKING HERE</a>.
