@@ -1,0 +1,150 @@
+:root {
+    --title: #fffcf9;
+    --subtitle: #b3b3b3;
+    --bg-button: #e9e6e3;
+    --background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background: var(--background) no-repeat;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 2rem;
+}
+
+.container .header img {
+    width: 100px;
+}
+
+.container .header h1 {
+    color: var(--title);
+}
+
+.container .movie_content {
+    width: 550px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 2rem 0;
+}
+
+.container .movie_content .details {
+    padding: 1rem;
+}
+
+.container .movie_content h2 {
+    color: var(--title);
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+
+.container .movie_content p {
+    color: var(--subtitle);
+    text-align: justify;
+}
+
+.container .movie_content img{
+    width: 170px;
+}
+
+.container .button_generator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-bottom: 1rem;
+}
+
+.container .button_generator button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: .3rem;
+
+    font-weight: 600;
+}
+
+.container .button_generator img {
+    width: 40px;
+    margin-right: 1rem;
+}
+
+.container .button_generator p {
+    color: var(--subtitle);
+    width: 380px;
+    text-align: center;
+    padding: .5rem;
+}
+
+@media (max-width:600px) {
+    .container {
+        height: 100%;
+    }
+
+    .container .header {
+        margin-top: 3rem;
+    }
+
+    .container .header img {
+        width: 70px;
+    }
+
+    .container .movie_content {
+        flex-direction: column;
+        align-items: center;
+
+        width: 350px;
+    }
+
+    .movie_content .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 350px;
+    }
+}
+
+@media (max-width:400px) {
+    .container .header img {
+        width: 70px;
+    }
+
+    .container .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .container .button_generator p {
+        width: 300px;
+    }
+}
