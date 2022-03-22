@@ -1,0 +1,239 @@
+:root {
+    --backgrond: #000;
+    --text-color: #FFF;
+    --button: #8257E5;
+    --border: #29292E;
+    --border-menu-mobile: #A8A8B3;
+    --text-color-menu-mobile: #E1E1E6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+html {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* ======================== MENU ============================= */
+body {
+    width: 100vw;
+    height: 100%;
+    background-color: var(--backgrond);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    overflow-x: hidden;
+}
+
+/* ============================ HEADER ======================= */
+
+header {
+    width: 100%;
+    height: 6.25rem;
+
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+
+    padding: .5rem 1.6rem;
+
+    border-bottom: 1px solid var(--border);
+
+    z-index: 30;
+}
+
+.logo_menu_header {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_menu_header img #logo {
+    width: 171px;
+}
+
+.logo_menu_header img #menu_button {
+    width: 24px;
+}
+
+/* =========================== MAIN ========================== */
+
+main {
+    width: 100%;
+    height: calc(100% - 6.25rem);
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+    position: relative;
+}
+
+main h1 {
+    width: 80%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+    letter-spacing: 0.02em;
+
+    color: var(--text-color);
+
+    text-align: center;
+
+    position: absolute;
+    top: 5.5rem;
+}
+
+main a {
+    position: absolute;
+    top: 19rem;
+
+    width: 174px;
+    height: 35px;
+
+    border: 1px solid #8257E5;
+    border-radius: 6px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--text-color);
+
+    text-decoration: none;
+    font-weight: 700;
+
+    gap: .7rem;
+
+    z-index: 10;
+}
+
+main a:hover {
+    background-color: var(--button);
+}
+
+.title {
+    /* width: 75%; */
+    
+    position: absolute;
+    top: 27.3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title span {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 68px;
+    letter-spacing: -0.03em;
+    color: var(--text-color);
+}
+
+.title .title2 {
+    color: var(--backgrond);
+    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+}
+
+/* =======================  BACKGROUNDS ======================= */
+
+#cups {
+    width: 428px;
+
+    position: absolute;
+    bottom: 0;
+    
+    z-index: 5;
+}
+
+#blur {
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+
+    z-index: 4;
+}
+
+/* =========================== ASIDE ========================== */
+
+.aside {
+    width: 100%;
+    height: calc(100% - 6.25rem);
+
+    top: 6.25rem;
+    left: 110%;
+    position: absolute;
+    z-index: 10;
+
+    background-color: var(--backgrond);
+
+    transition: all .5s ease;
+}
+
+.aside ul {
+    width: 100%;
+    height: 100%;
+}
+
+.aside ul .li_menu {
+    list-style: none;
+    padding: 1rem;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.aside ul li.selected {
+    border-left: 2px solid var(--button);
+}
+
+.aside ul .li_menu a {
+    text-decoration: none;
+    color: var(--text-color-menu-mobile);
+}
+
+.aside.active {
+    left: 0;
+}
+
+
+@media (min-width: 500px) and (max-width:800px) {
+
+    main h1 {
+        font-size: 2.3rem;
+        width: 70%;
+    }
+
+    main a {
+        width: 250px;
+        height: 60px;
+
+        color: var(--text-color);
+
+        font-size: 1.5rem;
+    }
+
+    main a img {
+        height: 20px;
+    }
+
+    .title span {
+        font-size: 60px;
+    }
+}
