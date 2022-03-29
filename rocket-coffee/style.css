@@ -1,0 +1,67 @@
+:root {
+    --backgrond: #000;
+    --text-color: #FFF;
+    --button: #8257E5;
+    --border: #29292E;
+    --border-menu-mobile: #A8A8B3;
+    --text-color-menu-mobile: #E1E1E6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--backgrond);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+/* 
+    width: 90%;
+    max-width: 1290px; */
+
+    margin-top: 5rem;
+}
+
+header .container .logo-content #logo-mobile {
+    display: none;
+}
+
+header .container .menu-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 100%;
+    width: 60%;
+}
+
+header .container .menu-section a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+header .container .menu-section nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
